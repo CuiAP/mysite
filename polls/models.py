@@ -9,7 +9,8 @@ class Question(models.Model):
 
     def __str__(self):
         return self.question_text
-
+class XXX(models.Model):
+    pass
 
 class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
